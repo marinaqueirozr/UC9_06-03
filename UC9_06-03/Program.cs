@@ -34,19 +34,19 @@ for (linha = 0; linha <=4; linha++)
     falta = (double.Parse(alunos[linha,2]) * 100) / double.Parse(alunos[linha, 1]);
     if (media >= 6 && falta <= 25)
     {
-        Console.WriteLine("Aprovado com MÉDIA: " + media.ToString("F") + "e" + falta + "% de FALTAS");
+        Console.WriteLine(alunos[linha, 0] + " :Aprovado com MÉDIA: " + media.ToString("F") + "e" + falta + "% de FALTAS");
     }
     if (media < 6 && falta <= 25)
     {
-        Console.WriteLine("Reprovado por MÉDIA: " + media.ToString("F"));
+        Console.WriteLine(alunos[linha, 0] + " :Reprovado por MÉDIA: " + media.ToString("F"));
     }
     if (media >= 6 && falta > 25)
     {
-        Console.WriteLine("Reprovado por FALTA: " + falta.ToString("F"));
+        Console.WriteLine(alunos[linha, 0] + " :Reprovado por FALTA: " + falta.ToString("F"));
     }
     if (media < 6 && falta > 25)
     {
-        Console.WriteLine("Reprovado com MÉDIA: " + media.ToString("F") + "e" + falta.ToString("F") + "% de FALTAS");
+        Console.WriteLine(alunos[linha, 0] + " :Reprovado com MÉDIA: " + media.ToString("F") + "e" + falta.ToString("F") + "% de FALTAS");
     }
 
 }
